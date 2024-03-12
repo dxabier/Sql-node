@@ -1,0 +1,31 @@
+@api = http://localhost:3000/products
+
+GET {{api}}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "HDD8",
+    "description": "hard 8"
+}
+
+###
+Get {{api}}/3
+
+###
+DELETE {{api}}/1
+
+###
+GET {{api}}/count
+
+###
+PUT {{api}}/3
+Content-Type: application/json
+
+{
+    "name": "Teclado alienware",
+    "description": "Teclado para gaming",
+    "quantity": 100
+}
